@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación web</title>
+</head>
+<body>
+    <h2>Modificado desde Js</h2> 
+    <p id="demo">Tipos de Kernel el papel del kernel es muy importante en lo que corresponde <br>
+        al funcionamiento de un ordenador, sin este núcleo no sería posible ingresar a<br> 
+        los diversos recursos que tiene, no sería factible el uso coordinado de las aplicaciones<br>
+        que se utilizan de forma diaria. </p>
+    <button type="button"
+    onclick="document.getElementById('demo').style.fontSize='35px'">
+    cambiar el tamaño del parrafo
+</button>
+    <button type="button"
+        onclick="document.getElementById('demo').style.display='none'">
+        Ocultar
+        </button>
+    <h3 id="resultado"> la suma es</h3>
+    <button onclick="document.getElementById('resultado').innerHTML=suma">
+        el Resultado es 
+    </button>
+    <script>
+            var x=6.69;
+            var y=40.174;
+            suma=x+y;  
+        </script>
+</body>
+</html> 
