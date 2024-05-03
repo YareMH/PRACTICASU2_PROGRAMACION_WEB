@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación web</title>
+</head>
+<body>
+    <h2>El objetivo de esta investigación es profundizar en el estudio de las ondas electromagnéticas.</h2> 
+    <h3>Se busca comprender en detalle los aspectos teóricos y prácticos </h3>
+    <p>con el objetivo último de promover el desarrollo y la innovación tecnológica en beneficio de la sociedad.</p>
+    <button id="on"
+        onclick="document.getElementById('myImage').src='imagenes/pic_bulbon.gif'">
+        encender foco
+    </button>
+
+    <img src="./imagenes/pic_bulboff.gif" id="myImage"/>
+
+    <button id="off"
+        onclick="tequedasciego()">
+        apagar foco
+    </button>
+
+    <script>
+        function tequedasciego() {
+            document.body.style.background = 'black';
+            document.getElementById('myImage').style.display = 'none';
+            document.getElementById('on').style.display = 'none';
+            document.getElementById('off').style.display = 'none';
+        }
+        </script>
+    
+</body>
+</html>
